@@ -1,0 +1,525 @@
+head {
+  overflow-x: hidden;
+  width: 100%;
+  height: 10vh;
+  background-repeat: no-repeat;
+  padding: none;
+  top: 8vh;
+  left: 0;}
+.IndexImg {
+  width: 30vw;
+  padding: 2vw;
+  margin: 2vw;}
+.explainImg {
+  width: 4vw;}
+body {
+  color: #f3f3f3;
+  background-color: #333333;
+  font-family: 'Didact Gothic';
+  font-size: clamp(12px, 2vw, 20px);
+  text-align: center;
+  margin-top: 10%;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;}
+@keyframes fadeInOpacity {
+  0% {opacity: 0;}
+  100% {opacity: 1;}}
+summary::-webkit-details-marker {display: none}
+details summary {cursor: pointer;}
+input[type='checkbox'] {display: none;}
+.WeaponIcon {
+  max-height: 4.7vh;
+  max-width: 4.7vh;}
+.aboutus {
+  font-size: 3rem;
+  padding: 10vw 10vh;
+  color: #f3f3f3;
+  text-align: center;}
+.wigglis {
+  padding: 6vw 6vh;
+  max-width: 30vw;
+  max-height: 30vh;}
+.collapsible-contentParagraphs {
+  max-height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.2s;
+  color: #f3f3f3;}
+.CollHeader {
+  text-decoration: underline;
+  font-size: 14pt;
+  text-align: center;
+  width: 80vw;
+  color: #f3f3f3;
+  margin-left: 10vw;
+  cursor: pointer;
+  transition: 0.3s ease-in;}
+.CollHeader::before {content: ' ';}
+.toggle:checked+.CollHeader+.collapsible-contentParagraphs {
+  max-height: 1000vh;}
+.CollHeader-contentParagraphs {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.2s;
+  background-color: rgb(92, 90, 90);
+  color: #f3f3f3;}
+.BuildCard, .TableScreenshot {padding: 1vw; max-width: 100%;}
+.ParagraphText {text-align: left;}
+.collapsible-contentLinks {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.2s;
+  max-width: 100vw;
+  color: #f3f3f3;}
+.LinksHeader {
+  text-decoration: underline;
+  font-size: 14pt;
+  text-align: center;
+  color: #f3f3f3;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  max-width: 10vw;
+  background-color: #313030;}
+.LinksHeader::before {
+  content: ' ';}
+.toggle:checked+.LinksHeader+.collapsible-contentLinks {
+  max-height: 1000vh;
+  max-width: 80vw;}
+.LinksHeader-contentLinks {
+  max-height: 0px;
+  text-align: center;
+  transition: 0.2s;
+  color: #333232;}
+.SetLinksContainer{
+  clear:both;}
+.BuildParagraph {
+  margin-left: 10vw;
+  margin-right: 10vw;}
+.switchskilltable {display: none;}
+.rawtable {display: none;}
+.inlineimg {width: 5vw;}
+.eletable {display: none;}
+.eletableMobile {
+  table-layout: fixed;
+  text-align: center;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;}
+.eletableMobile thead th:nth-child(1) {
+  width: 5%;
+  border: 2px solid #ffffff;}
+.eletableMobile thead th:nth-child(2) {
+    width: 95%;
+    border: 2px solid #ffffff;}
+.eletableMobile td {
+    border: 2px solid #ffffff;}
+.eletableMobile tbody tr {
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    border: 2px solid #ffffff;}    
+.eletableMobile tfoot th {border: none;}
+.eletableMobile tbody tr:nth-child(1) {background-color: #cf5151;}
+.eletableMobile tbody tr:nth-child(2) {background-color: #290b94;}
+.eletableMobile tbody tr:nth-child(3) {background-color: #8a8a0b;}
+.eletableMobile tbody tr:nth-child(4) {background-color: #215c5c;}
+.eletableMobile tbody tr:nth-child(5) {background-color: #48096d;}
+.gltable {
+    table-layout: fixed;
+    text-align: center;
+    max-width: 80%;
+    max-height: 100%;
+    min-width: 40%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;}
+.gltable thead th:nth-child(1) {
+    width: 5%;
+    border: 2px solid #ffffff;}
+.gltable thead th:nth-child(2), .gltable thead th:nth-child(3), .gltable thead th:nth-child(4) {
+    width: 15%;
+    border: 2px solid #ffffff;}
+.gltable thead th:nth-child(5) {
+   width: 50%;
+   border: 2px solid #ffffff;}
+   .gltable td {
+   padding: 20px;
+   border: 2px solid #ffffff;}
+.gltable tbody tr {
+   border: 2px solid #ffffff;
+   text-shadow: 1px 1px 1px rgb(0, 0, 0);}
+.gltable tfoot th {border: none;}
+.gltable tbody tr:nth-child(even) {background-color: #5f5f5f;}
+.gltable tbody tr:nth-child(odd) {background-color: #3d3d3d;}
+.skillpriotable {
+    table-layout: fixed;
+    text-align: center;
+    max-width: 80%;
+    max-height: 100%;
+    min-width: 40%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;}
+.skillpriotable thead th:nth-child(1) {
+    width: 3%;
+    border: 2px solid #ffffff;}
+.skillpriotable thead th:nth-child(2) {
+    width: 25%;
+    border: 2px solid #ffffff;}
+.skillpriotable thead th:nth-child(3) {
+    width: 72%;
+    border: 2px solid #ffffff;}
+.skillpriotable td {
+padding: 20px;
+border: 2px solid #ffffff;}
+.skillpriotable tbody tr {
+border: 2px solid #ffffff;
+text-shadow: 1px 1px 1px rgb(0, 0, 0);}
+.skillpriotable tfoot th {
+border: none;}
+.skillpriotable tbody tr:nth-child(even) {
+background-color: #5f5f5f;}
+.skillpriotable tbody tr:nth-child(odd) {background-color: #3d3d3d;}
+.best {background-color: #3e9249;}
+.good {background-color: #76a063;}
+.bad {background-color: #9e4949;}
+.redscroll {color: #ff0000;}
+.bluescroll {color: #7777fa;}
+.tooltip {
+  position: relative;
+  display: inline-block;}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background: linear-gradient(50deg, #423800, #000000, #000000, #000000, #4d4e00);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 5px;
+    border: solid;
+    border-color:#757717;
+    position: absolute;
+    bottom: 4vh;
+    left: 0;}
+.tooltip:hover .tooltiptext {visibility: visible;animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation: flicker 10s infinite;
+border-bottom: 2px solid black;}
+/*yoinked from https://www.sliderrevolution.com/resources/css-border-animation/ - by Nick*/
+.tooltiptext:before, .tooltiptext:after {
+    content: '';}
+@keyframes steam {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}}
+/*yoinked from https://www.sliderrevolution.com/resources/css-border-animation/ - by Nick*/
+.CollL2Page {text-align: center;}
+::-webkit-scrollbar {display: none;}
+.sidebarbutton {
+    text-decoration: underline;
+    text-align: center;
+    color: #f3f3f3;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    z-index: 10;
+    height: 10vh;
+    width: 10vw;}
+.sidebarbutton::before {display: hidden;}
+.toggle:checked+.sidebarbutton+.collapsible-contentSidebar {
+    max-height: 100vh;
+    max-width: 100vw;
+    top:0;
+    transform: translateX(-150%);}  
+.collapsible-contentSidebar {
+    top:0;
+    overflow:scroll;
+    text-align: center;
+    transition: 0.2s;
+    height: 100vh;
+    color: #f3f3f3;
+    position: fixed;
+    background-color: rgb(32, 47, 51);
+    border: 2px solid white;
+    border-radius: 3%;
+    z-index: 5;}  
+.burger {width: 10vh; height: 10vh;}
+.collapsible-contentSidebar1 {
+    max-height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.2s;
+    background-color: rgb(32, 47, 51);
+    z-index: -20;
+    color: #f3f3f3;
+    width: 100%;}
+.toggle:checked+.collapsibleSidebar+.collapsible-contentSidebar1 {
+    max-height: 150vh;
+    max-width: 100%;
+    margin: 0 auto;}
+.collapsibleSidebar {
+    text-decoration: underline;
+    text-align: center;
+    color: #f3f3f3;
+    cursor: pointer;
+    width: 80vw;
+    transition: 0.5s ease-in;
+    height: 100vh;}
+.sidebar {width: 80vw;}
+.MainPagesBurger {font-size: 1.7rem;}
+.collapsible-contentSidebar1 a:link, a:visited {
+    color: #f3f3f3;
+    padding-left:1vw ;
+    padding-right: 1vw;
+    border-style: dashed;
+    background-color: #333333;
+    max-width: 728px;
+    text-align: center;
+    font-size: 1.2rem;}
+.collapsible-contentSidebar1 a:active {
+    color: #444;
+    border: 2px green;
+    background-color: #444;
+    font-size: 1.2rem;}
+.Side_Img {
+    width: 25vw;
+    height: 25vw;}
+.collapsible-contentToC {
+    overflow: hidden;
+    text-align: center;
+    transition: 0.2s;
+    width: 97vw;
+    color: #f3f3f3;}
+.ToCHeader {
+    text-decoration: underline;
+    text-align: center;
+    color: #f3f3f3;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 1;
+    height: 6vh;
+    width: 4vw;}
+.ToCHeader::before {display: hidden;}
+.toggle:checked+.ToCHeader+.collapsible-contentToC {
+    max-height: 100vh;
+    transform: translateY(-100%);}
+.CollToc {
+    width: 40vw;
+    height: 40vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 2;}
+.ToCHeader-contentToC {
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: rgb(92, 90, 90);
+    color: #f3f3f3;}
+.Toc_Img {
+    width: 50px;
+    height: 50px;}
+.ColledToc {
+    left: 0;
+    width: 80vw;
+    border: 2px solid gold;
+    margin-left: 50px;
+    background: linear-gradient(60deg, rgba(92, 92, 92, 0.95), rgb(84, 2, 117, 0.95));}
+.ColledToc a:link, a:visited {
+    color: #f3f3f3;
+    padding-left:1vw ;
+    padding-right: 1vw;
+    border-style: dashed;
+    border-color: #464646;
+    text-align: center;
+    max-width: 728px;
+    text-align: center;
+    font-size: 1.2rem;
+    background: linear-gradient(60deg, rgba(36, 2, 70, 0.993), rgb(0, 0, 0));}
+#endgame, #prog, #guide {display: none;}
+#endgame {
+    background: linear-gradient(200deg, rgba(189, 65, 73, 0.699), rgba(255, 211, 99, 0.705) );
+    width: 40vw;
+    margin: auto;
+    outline: 2px solid gray;}
+#prog {
+    background: linear-gradient(20deg, rgb(140, 174, 90), rgb(103, 100, 215) );
+    width: 40vw;
+    margin: auto;
+    outline: 2px solid gray;}
+#guide {
+    background-image: linear-gradient(to right top, #000000, #31262f, #514b66, #5979a3, #43add8, #33b3d3, #2eb8cb, #37bcc1, #399295, #356b6c, #2c4546, #202323);
+    width: 40vw;
+    margin: auto;
+    outline: 2px solid gray;}
+input[id="showendgame"]:checked ~ #endgame,
+input[id="showprog"]:checked ~ #prog,
+input[id="showguide"]:checked ~ #guide {
+    display: block;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;}
+input[id="showendgame"]:checked ~ .radiotext1,
+input[id="showguide"]:checked ~ .radiotext2,
+input[id="showprog"]:checked ~ .radiotext3 {
+    border: 4px solid;
+    animation: flicker 4s infinite;
+    background-color: #000000;}
+@keyframes flicker {
+    0% {border-color: rgba(179, 252, 255, 0.3);
+    border-bottom-color: white;}
+    50% {border-color: rgba(179, 252, 255, 1);
+    border-bottom-color:white;}
+    100% {border-color: rgba(179, 252, 255, 0.3);
+    border-bottom-color: white;}}
+.radiobutton {display: none;}
+.radiotext1, .radiotext2, .radiotext3 {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 4vw;
+    height: 2vh;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: #333333;}
+.Level2Paragraph {
+    text-align: left;}
+.Patchnotes {width: 50vw;}
+.spaceholder {visibility: hidden; width: 1px; height: 10vh;}
+h2 {font-size: 3rem; text-shadow: 2px  1px 2px red, 0 0 1em blue, 0 0 0.2em blue;}
+.gamememe {
+  width: 85vw;
+  z-index: -1;}
+.GuideParagraph {
+  margin-left: 10vw;
+  margin-right: 10vw;}
+.GuideParagraphText {
+  text-align: center;}
+.GuideCard, .GuideCardMobile {
+  max-width: 100%;
+  padding: 1vw;}
+.GuideImg {width: 65vw; z-index: -1;}
+.rawtableMobile {
+  table-layout: fixed;
+  text-align: center;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;}
+.rawtableMobile thead th:nth-child(1) {
+  width: 15%;
+  border: 1px solid #ddd;}
+.rawtableMobile thead th:nth-child(2) {
+  width: 85%;
+  border: 1px solid #ddd;}
+.rawtableMobile td {
+  padding: 20px;
+  border: 1px solid #ddd;}
+.rawtableMobile tbody tr {
+  border: 1px solid #ddd;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);}
+.rawtableMobile tfoot th {border: none;}
+.rawtableMobile tbody tr:nth-child(odd) {background-color: #a09c9c;}
+.rawtableMobile tbody tr:nth-child(even) {background-color: #757575;}
+.EleStatusImg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;}
+/*complete yt lite embed yoinked from: https://github.com/paulirish/lite-youtube-embed*/
+lite-youtube {
+  background-color: #000;
+  position: relative;
+  display: block;
+  contain: content;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  max-width: 720px;}
+lite-youtube::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  top: 0;
+  /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+  background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+  height: 99px;
+  width: 100%;
+  font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+  color: hsl(0deg 0% 93.33%);
+  text-shadow: 0 0 2px rgba(0,0,0,.5);
+  font-size: 18px;
+  padding: 25px 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;}
+lite-youtube:hover::before {
+  color: white;}
+/* responsive iframe with a 16:9 aspect ratio thanks https://css-tricks.com/responsive-iframes/ */
+lite-youtube::after {
+  content: "";
+  display: block;
+  padding-bottom: calc(100% / (16 / 9));}
+lite-youtube > iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;}
+lite-youtube > .lty-playbtn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center/68px 48px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  filter: grayscale(100%);
+  transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+  border: 0;}
+lite-youtube:hover > .lty-playbtn,
+lite-youtube .lty-playbtn:focus {
+  filter: none;}
+lite-youtube.lyt-activated {cursor: unset;}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lty-playbtn {
+  opacity: 0;
+  pointer-events: none;}
+.lyt-visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;}
+/*complete yt lite embed yoinked from: https://github.com/paulirish/lite-youtube-embed*/
+.PeopleImg {width: 7vw;}
+.PeopleTable {
+text-align: left;
+margin-left: auto;
+margin-right: auto;
+border-collapse: collapse;
+width: 80vw;}
+.PeopleTable tbody tr, .PeopleTableSmall tbody tr {
+text-shadow: 3px 3px 3px rgb(0, 0, 0);}
+.PeopleTableSmall {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 50vw;}
+.SmallImg {width: 3vw;}
+.L2Container {text-align: center; display: block; width: 70vw; margin: auto;}
+.l2guideimg {width: 70vw;}
+.RiseMeme {background-image: url(images/AmazonPrimordialDarkVest.webp); background-repeat: no-repeat; background-size: 100vw;}
+.WorldMeme {background-image: url(images/slap_roof_of_fatty.webp); background-repeat: no-repeat; background-size: 100vw;}

@@ -1,0 +1,2 @@
+class FooterBar extends HTMLElement {constructor () {super();this.innerHTML =`<a href="https://www.wiggler.pet"><h2>Click here to get back to the live website!</h2></a>`;}}
+if ('customElements' in window) {customElements.define('footer-bar', FooterBar);}
